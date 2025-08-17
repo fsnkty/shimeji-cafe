@@ -1,3 +1,4 @@
+name = "shimeji-cafe"
 routes = [
   { pattern = "shimeji.cafe", custom_domain = true }
 ]
