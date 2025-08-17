@@ -28,12 +28,12 @@ export default defineNuxtConfig({
     build: {
       markdown: {
         highlight: {
-          langs: ['nix', 'bash'],
           theme: {
             default: 'github-dark',
             dark: 'github-dark',
             light: 'github-light'
-          }
+          },
+          langs: ['json', 'js', 'ts', 'html', 'css', 'vue', 'bash', 'markdown', 'nix']
         }
       }
     }

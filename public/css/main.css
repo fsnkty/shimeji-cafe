@@ -7,7 +7,8 @@ body {
     @apply bg-zinc-200 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-200;
 }
 
-a {
+a,
+button {
     @apply text-purple-900 dark:text-purple-300;
     @apply hover:text-purple-700 dark:hover:text-purple-400 hover:underline;
 }
@@ -31,12 +32,33 @@ a {
 
 /* lines */
 .prose code {
-    @apply font-code bg-zinc-100 dark:bg-zinc-800 rounded-lg border-2 p-1 border-zinc-300 dark:border-zinc-700;
+    @apply font-mono bg-zinc-100 dark:bg-zinc-800 rounded-lg border-2 p-1 border-zinc-300 dark:border-zinc-700;
 }
 
 /* remove line styling from code blocks */
 .prose pre code {
     @apply bg-transparent p-0 border-0;
+}
+
+/* line highlights */
+.prose .highlight {
+    @apply bg-zinc-200 dark:bg-zinc-700 block;
+}
+
+/* line numbers */
+.prose code.show-line-numbers {
+    counter-reset: step;
+    counter-increment: step 0;
+}
+
+.prose code.show-line-numbers .line::before {
+    content: counter(step);
+    counter-increment: step;
+    width: 1rem;
+    margin-right: 1.5rem;
+    display: inline-block;
+    text-align: right;
+    color: rgba(115, 138, 148, .4)
 }
 
 /* Headings */

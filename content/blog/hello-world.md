@@ -23,8 +23,8 @@ codeblock test styled
 `export blah`{lang="bash"}
 
 ## codeblock example
-
-```nix [nix to deep INI]
+lang nix, lines 2,3 highlighted & showLineNumbers enabled
+```nix [nix to deep INI] {2,4} showLineNumbers
 gendeepINI = toINI {
   mkKeyValue =
     let
@@ -42,9 +42,25 @@ gendeepINI = toINI {
       )
     else
       mkKeyValueDefault { } sep k v;
-  };
+};
 ```
+lang bash, no highlights, no line numbers
+```bash [Example Bash Script]
+#!/bin/bash
+check_number() {
+    if [ $((${1} % 2)) -eq 0 ]; then
+        echo "${1} is even"
+    else
+        echo "${1} is odd"
+    fi
+}
 
+echo "Number checker script"
+
+for i in {1..5}; do
+    check_number $i
+done
+```
 ## table test
 | Key | Type      | Description |
 | --- | --------- | ----------- |

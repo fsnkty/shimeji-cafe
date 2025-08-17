@@ -8,7 +8,6 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['azuki'],
-                code: ['azukiP'],
             }
         }
     }
