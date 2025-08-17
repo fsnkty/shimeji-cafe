@@ -5,7 +5,6 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/content',
-    '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/image',
     '@nuxt/test-utils',
@@ -18,6 +17,9 @@ export default defineNuxtConfig({
         { name: 'description', content: 'fsnktys personal site' }
       ]
     }
+  },
+  appConfig: {
+    appId: 'shimeji-cafe',
   },
   css: [
     './public/css/main.css'
