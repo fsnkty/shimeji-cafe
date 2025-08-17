@@ -2,7 +2,21 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-
+  nitro: {
+    preset: 'cloudflare_module',
+    cloudflare: {
+      deployConfig: true,
+      wrangler: {
+        d1_databases: [
+          {
+            binding: 'DB',
+            database_name: 'shimeji-cafe',
+            database_id: '44f42673-9e94-4a50-bfb5-f95311c2a599'
+          }
+        ]
+      }
+    }
+  },
   modules: [
     '@nuxt/content',
     '@nuxt/fonts',
