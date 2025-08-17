@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply bg-zinc-200 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-200;
+}
+
+a {
+    @apply text-purple-900 dark:text-purple-300;
+    @apply hover:text-purple-700 dark:hover:text-purple-400 hover:underline;
+}
+
+@layer components {
+    .card {
+        @apply bg-zinc-200 dark:bg-zinc-900 rounded-xl p-4 w-full border-2 border-zinc-300 dark:border-zinc-700;
+    }
+
+    .card-block {
+        @apply bg-zinc-300 dark:bg-zinc-800 rounded-xl p-4;
+    }
+}
+
+
+/* code */
+/* blocks */
+.prose pre {
+    @apply bg-zinc-100 dark:bg-zinc-800 rounded-b-lg overflow-x-auto p-2 pb-3;
+}
+
+/* lines */
+.prose code {
+    @apply font-code bg-zinc-100 dark:bg-zinc-800 rounded-lg border-2 p-1 border-zinc-300 dark:border-zinc-700;
+}
+
+/* remove line styling from code blocks */
+.prose pre code {
+    @apply bg-transparent p-0 border-0;
+}
+
+/* Headings */
+.prose h1 {
+    @apply text-3xl font-bold;
+}
+
+.prose h2 {
+    @apply text-2xl font-semibold;
+}
+
+.prose h3 {
+    @apply text-xl font-medium;
+}
+
+/* Table styles */
+.prose table {
+    @apply w-full overflow-hidden rounded-lg border-2 border-zinc-300 dark:border-zinc-700 border-separate border-spacing-0;
+}
+
+.prose th {
+    @apply bg-zinc-200 dark:bg-zinc-700 text-left p-2 font-semibold;
+}
+
+.prose td {
+    @apply p-2 border-t border-zinc-300 dark:border-zinc-700;
+}
+
+.prose tr:nth-child(even) td {
+    @apply bg-zinc-100 dark:bg-zinc-800;
+}
