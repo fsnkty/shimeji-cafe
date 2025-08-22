@@ -27,22 +27,22 @@ button {
 /* code */
 /* blocks */
 .prose pre {
-    @apply bg-zinc-100 dark:bg-zinc-800 rounded-b-lg overflow-x-auto p-2 pb-3;
+    @apply rounded-b-lg overflow-x-auto p-2 pb-3 bg-[#1e1e2e];
 }
 
 /* lines */
 .prose code {
-    @apply font-mono bg-zinc-100 dark:bg-zinc-800 rounded-lg border-2 p-1 border-zinc-300 dark:border-zinc-700;
+    @apply font-mono rounded-lg border-2 p-1 border-zinc-300 dark:border-zinc-700 bg-[#1e1e2e] text-[#cdd6f4];
 }
 
 /* remove line styling from code blocks */
 .prose pre code {
-    @apply bg-transparent p-0 border-0;
+    @apply p-0 border-0;
 }
 
 /* line highlights */
 .prose .highlight {
-    @apply bg-zinc-200 dark:bg-zinc-700 block;
+    @apply bg-[#313244] block;
 }
 
 /* line numbers */

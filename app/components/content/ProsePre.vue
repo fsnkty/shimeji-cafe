@@ -54,7 +54,7 @@ function copyCode() {
 
 <template>
     <div class="rounded-lg border-2 border-zinc-300 dark:border-zinc-700">
-        <div class="flex justify-between items-center bg-zinc-200 dark:bg-zinc-900 rounded-lg p-1">
+        <div class="flex justify-between items-center rounded-lg p-1">
             <span>{{ title }}</span>
             <button @click="copyCode">{{ copied ? 'Copied!' : 'Copy' }}</button>
         </div>
