@@ -27,8 +27,14 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Shimeji Cafe',
+      htmlAttrs: {
+        lang: 'en',
+      },
       meta: [
         { name: 'description', content: 'fsnktys personal site' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       ]
     }
   },
@@ -50,6 +56,14 @@ export default defineNuxtConfig({
   },
   fonts: {
     provider: 'local',
+    defaults: {
+      weights: [400],
+      styles: ['normal'],
+      subsets: [
+        'latin',
+        'latin-ext'
+      ]
+    },
     families: [
       { name: 'azuki' },
       { name: 'azukiP' },

@@ -4,7 +4,8 @@ const { data: posts } = await useAsyncData(
     () => queryCollection('blog')
         .select('title', 'description', 'path', 'date')
         .order('date', 'DESC')
-        .all()
+        .all(),
+    { server: true }
 )
 </script>
 

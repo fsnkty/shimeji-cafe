@@ -17,19 +17,19 @@
                 <ul>
                     <li>made using nuxt. blog built on nuxt/content</li>
                     <li>currently running on cloudflare workers & D1</li>
-                    <li>source code available <NuxtLink to="https://github.com/fsnkty/shimeji-cafe">here</NuxtLink>
+                    <li>source code available on <NuxtLink to="https://github.com/fsnkty/shimeji-cafe">github</NuxtLink>
                     </li>
                 </ul>
             </div>
         </div>
         <!-- about me -->
         <div class="prose card relative max-w-lg">
-            <NuxtImg src="/mushie.webp" alt="Mushie" width={48} height={48} class="absolute -top-7 -right-4 w-12 h-12"
-                priority />
+            <NuxtImg src="/mushie.webp" alt="Mushie" width="48" height="48" class="absolute -top-7 -right-4 w-12 h-12"
+                loading="eager" />
             <h1>about me</h1>
             <div class="flex items-center gap-4 mb-4">
                 <NuxtImg src="/pfp.webp" class="rounded-full w-32 h-32 border-4 border-zinc-300 dark:border-zinc-700"
-                    width={128} height={128} alt="Profile picture" priority />
+                    width="128" height="128" alt="Profile picture" loading="eager" />
                 <div>
                     <h2>fsnkty</h2>
                     <p>they/them</p>

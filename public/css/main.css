@@ -9,7 +9,7 @@ body {
 
 a,
 button {
-    @apply text-purple-900 dark:text-purple-300;
+    @apply text-purple-900 dark:text-purple-300 underline;
     @apply hover:text-purple-700 dark:hover:text-purple-400 hover:underline;
 }
 
