@@ -1,27 +1,5 @@
 <template>
-    <div class="flex flex-row gap-4">
-        <div class="prose card relateive max-w-md gap-4 flex flex-col">
-            <h2>about shimeji.cafe</h2>
-            <div class="card-block">
-                <h2>theme</h2>
-                <ul>
-                    <li>background image: <NuxtLink to="https://holedigging.club">holedigging.club</NuxtLink>
-                    </li>
-                    <li>font: <NuxtLink to="https://azukifont.com/font/azuki.html">azuki</NuxtLink>
-                    </li>
-                    <li>rest of the styling stuff is mine ^^</li>
-                </ul>
-            </div>
-            <div class="card-block">
-                <h2>other</h2>
-                <ul>
-                    <li>made using nuxt. blog built on nuxt/content</li>
-                    <li>currently running on cloudflare workers & D1</li>
-                    <li>source code available on <NuxtLink to="https://github.com/fsnkty/shimeji-cafe">github</NuxtLink>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <div class="flex flex-col gap-4">
         <!-- about me -->
         <div class="prose card relative max-w-lg">
             <NuxtImg src="/mushie.webp" alt="Mushie" width="48" height="48" class="absolute -top-7 -right-4 w-12 h-12"
@@ -46,6 +24,28 @@
                         <li>Email: <a href="mailto:fsnkty@shimeji.cafe">fsnkty@shimeji.cafe</a></li>
                     </ul>
                 </div>
+            </div>
+        </div>
+        <div class="prose card relateive max-w-md gap-4 flex flex-col">
+            <h2>about shimeji.cafe</h2>
+            <div class="card-block">
+                <h2>theme</h2>
+                <ul>
+                    <li>background image: <NuxtLink to="https://holedigging.club">holedigging.club</NuxtLink>
+                    </li>
+                    <li>font: <NuxtLink to="https://azukifont.com/font/azuki.html">azuki</NuxtLink>
+                    </li>
+                    <li>rest of the styling stuff is mine ^^</li>
+                </ul>
+            </div>
+            <div class="card-block">
+                <h2>other</h2>
+                <ul>
+                    <li>made using nuxt. blog built on nuxt/content</li>
+                    <li>currently running on cloudflare workers & D1</li>
+                    <li>source code available on <NuxtLink to="https://github.com/fsnkty/shimeji-cafe">github</NuxtLink>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

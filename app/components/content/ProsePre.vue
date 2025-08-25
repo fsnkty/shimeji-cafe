@@ -30,7 +30,6 @@ const props = defineProps({
     }
 })
 
-const copied = ref(false)
 const title = computed(() => {
     if (props.filename) return props.filename
     if (props.meta && props.language) return `${props.language} ${props.meta}`
@@ -43,6 +42,7 @@ const shouldShowLineNumbers = computed(() => {
     return props.meta?.includes('showLineNumbers') || props.showLineNumbers
 })
 
+const copied = ref(false)
 function copyCode() {
     if (props.code) {
         navigator.clipboard.writeText(props.code)

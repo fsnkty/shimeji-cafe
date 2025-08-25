@@ -13,11 +13,11 @@ const { data: latestPost } = await useAsyncData(
   <div class="prose relative card max-w-2xl">
     <h2>Welcome to my website!</h2>
     <p>everything's in the nav bar up top</p>
-    <div v-if="latestPost">
+    <div class="prose" v-if="latestPost">
       <h2>latest post</h2>
       <div class="card-block">
         <NuxtLink :to="latestPost.path">
-          <h3>{{ latestPost.title }}</h3>
+          <h2>{{ latestPost.title }}</h2>
         </NuxtLink>
         <p>{{ latestPost.description }}</p>
       </div>
