@@ -1,5 +1,6 @@
 name = "shimeji-cafe"
 compatibility_date = "2025-08-13"
 routes = [
-  { pattern = "shimeji.cafe", custom_domain = true }
+  { pattern = "shimeji.cafe", custom_domain = true },
+  { pattern = "www.shimeji.cafe", custom_domain = true }
 ]
