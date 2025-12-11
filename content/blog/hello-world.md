@@ -2,6 +2,7 @@
 title: "Hello World"
 date: 2025-08-09
 description: "My very first post in Nuxt!"
+tags: ["blog"]
 ---
 
 # Hello!!

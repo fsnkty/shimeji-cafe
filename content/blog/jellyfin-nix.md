@@ -2,6 +2,7 @@
 title: "Jellyfin setup with nixos"
 date: 2025-08-10
 description: "how I made jellyfin behave on nixos"
+tags: ["nix", "nixos", "self hosting"]
 ---
 
 # how I made jellyfin behave on nixos

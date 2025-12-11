@@ -21,6 +21,13 @@ button {
     .card-block {
         @apply bg-zinc-300 dark:bg-zinc-800 rounded-xl p-4;
     }
+
+    .tags {
+        @apply flex gap-2
+    }
+    .tag {
+        @apply bg-zinc-700 dark:bg-zinc-700 rounded-xl px-2;
+    }
 }
 
 
