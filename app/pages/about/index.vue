@@ -10,8 +10,8 @@
                     width="128" height="128" alt="Profile picture" loading="eager" />
                 <div>
                     <h2>fsnkty</h2>
-                    <p>they/them</p>
-                    <p>kiwi🥝, software dev.</p><br />
+                    <p>they/them ( or really any )</p>
+                    <p>kiwi🥝, software engineer.</p><br />
                 </div>
             </div>
             <div class="w-full flex flex-col gap-4">
@@ -22,6 +22,7 @@
                         <li>Steam: <a href="https://steamcommunity.com/id/fsnkty/">/id/fsnkty</a></li>
                         <li>GitHub: <a href="https://github.com/fsnkty">/fsnkty</a></li>
                         <li>Email: <a href="mailto:fsnkty@shimeji.cafe">fsnkty@shimeji.cafe</a></li>
+                        <li>Matrix: <a href="https://matrix.to/#/@fsnkty:nixos.dev">@fsnkty:nixos.dev</a></li>
                     </ul>
                 </div>
             </div>
